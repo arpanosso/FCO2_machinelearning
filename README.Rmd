@@ -11,8 +11,14 @@ knitr::opts_chunk$set(
 )
 ```
 
-# FCO2_machinelearning
+# Aprendizado de máquina e emissão de CO~2~, solo-planta-atmosfera
 
-This webpage is dedicated to providing data from 20 years of soil CO2 emission in agricultural areas in Brazil
+> This webpage is dedicated to providing data from 20 years of soil CO~2~ emission in agricultural areas in Brazil
 
 http://arpanosso.github.io/FCO2_machinelearning/index.html
+
+```{r}
+dados <- readr::read_rds("data/dados_todos.rds")
+skimr::skim(dados)
+```
+
